@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:"Poppins",sans-serif;
+  background: linear-gradient(135deg, #0f2a61 0%, #003b77 40%, #0b78a0 100%);
+min-height:100vh;
+}
+
+/* Dashboard layout */
+
+.dashboard{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* Header */
+
+.header{
+width:100%;
+max-width:1200px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 20px;
+color:white;
+}
+
+.header h1{
+font-weight:600;
+font-size:26px;
+letter-spacing:1px;
+}
+
+.user-info{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:15px;
+}
+
+/* Content */
+
+.content{
+width:100%;
+max-width:1000px;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+/* Glass cards */
+
+.upload-card,
+.analysis-card,
+.questions-card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(14px);
+border-radius:14px;
+padding:28px;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+color:white;
+}
+
+.upload-card h2,
+.analysis-card h2,
+.questions-card h2{
+margin-bottom:15px;
+font-weight:500;
+}
+
+/* Upload section */
+
+.upload-card form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:10px;
+}
+
+.upload-card input{
+padding:10px;
+border-radius:6px;
+border:none;
+font-size:14px;
+}
+
+/* Buttons */
+
+.upload-btn{
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+border:none;
+color:white;
+padding:10px;
+border-radius:6px;
+cursor:pointer;
+font-weight:500;
+transition:0.3s;
+}
+
+.upload-btn:hover{
+transform:scale(1.05);
+}
+
+.sample-btn{
+margin-top:10px;
+background:rgba(255,255,255,0.18);
+border:1px solid rgba(255,255,255,0.4);
+color:white;
+padding:10px;
+border-radius:6px;
+cursor:pointer;
+font-weight:500;
+transition:0.3s;
+}
+
+.sample-btn:hover{
+background:rgba(255,255,255,0.35);
+}
+
+.logout-btn{
+background:#ff4b5c;
+border:none;
+color:white;
+padding:8px 16px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+transition:0.3s;
+}
+
+.logout-btn:hover{
+background:#e63e4e;
+}
+
+.start-btn{
+margin-top:25px;
+background:linear-gradient(45deg,#28a745,#20c997);
+border:none;
+color:white;
+padding:12px 28px;
+border-radius:6px;
+cursor:pointer;
+font-size:15px;
+font-weight:500;
+transition:0.3s;
+}
+
+.start-btn:hover{
+transform:scale(1.05);
+}
+
+/* Divider */
+
+.divider{
+text-align:center;
+margin:18px 0;
+font-size:14px;
+opacity:0.7;
+}
+
+/* Resume analysis */
+
+.analysis-card p{
+margin-top:8px;
+font-size:15px;
+}
+
+/* Questions */
+
+.questions-card{
+display:flex;
+flex-direction:column;
+}
+
+.question{
+display:flex;
+gap:15px;
+align-items:flex-start;
+padding:14px;
+margin-top:12px;
+background:rgba(255,255,255,0.18);
+border-radius:8px;
+transition:0.25s;
+}
+
+.question:hover{
+background:rgba(255,255,255,0.3);
+}
+
+.q-number{
+font-weight:600;
+color:#ffd700;
+font-size:18px;
+}
+
+.qa-content{
+flex:1;
+}
+
+.q-text{
+font-weight:500;
+margin-bottom:6px;
+}
+
+.answer{
+font-size:14px;
+opacity:0.9;
+}
+
+/* Message */
+
+.message{
+margin-top:10px;
+background:rgba(255,255,255,0.2);
+padding:8px 12px;
+border-radius:6px;
+font-size:14px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+.content{
+padding:15px;
+}
+
+.upload-card,
+.analysis-card,
+.questions-card{
+padding:22px;
+}
+
+.question{
+flex-direction:column;
+}
+
+.q-number{
+font-size:16px;
+}
+
+}
